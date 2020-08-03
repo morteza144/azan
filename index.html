@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- <link rel="stylesheet" href="cdn.rawgit.com/morteza/bootstrap-rtl/v3.3.4/dist/css/bootstrap-rtl.min.css"> -->
+	<title>index html</title>
+</head>
+<body>
+
+
+<div class="container" dir="rtl" style="text-align:right;">
+
+<nav class="navbar navbar-fixed-top navbar-light bg-info shadow-lg">
+	<a class="navbar-brand" href="#">به اولین اپ من خوش امدیدی</a>
+</nav>
+<br>
+<br>
+<br>
+
+
+	<div class="ir-select">
+			<label for="poro">استان خود را اخمتخاب کنید</label>
+		<select class="ir-province" id="poro"></select>
+		<hr>
+			<label for="sele">اون شهر خود را انتخاب کنید</label>
+		<select class="ir-city" id="sele"></select>	
+	</div>
+
+
+
+
+
+	<button type="button" onclick="go()">action</button>
+
+
+
+
+<ul>
+	<li id="azan_sobh"></li>
+	<li id="azan_zohr"></li>
+	<li id="azan_maghreb"></li>
+</ul>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><!-- jquery -->
+    <script src="./js/bootstrap.bundle.min.js"></script> <!-- bootstrap bundle -->
+
+	<script src="js/ir-city-select.min.js"></script>  <!-- ir-city -->
+	<script type="text/javascript" src="hi.js"></script>	<!-- hi.js -->
+</body>
+</html>
