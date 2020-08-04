@@ -1,46 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+    <link rel="stylesheet" href="./css/bootstrap4_5_0.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="./css/myfont.css">
 
     <!-- <link rel="stylesheet" href="cdn.rawgit.com/morteza/bootstrap-rtl/v3.3.4/dist/css/bootstrap-rtl.min.css"> -->
 	<title>index html</title>
 </head>
-<body>
-
-
-<div class="container" dir="rtl" style="text-align:right;">
-
-<nav class="navbar navbar-fixed-top navbar-light bg-info shadow-lg">
-	<a class="navbar-brand" href="#">به اولین اپ من خوش امدیدی</a>
-</nav>
-<br>
-<br>
-<br>
-
-
-	<div class="ir-select">
-			<label for="poro">استان خود را اخمتخاب کنید</label>
-		<select class="ir-province" id="poro"></select>
-		<hr>
-			<label for="sele">اون شهر خود را انتخاب کنید</label>
-		<select class="ir-city" id="sele"></select>	
-	</div>
 
 
 
 
 
-	<button type="button" onclick="go()">action</button>
+<body class="iran_bold">
+
+	<div class="container">
+
+<!-- #####################  first nav fixed --> 
+		<nav class="navbar navbar-fixed-top navbar-light bg-info shadow-lg">
+			<a class="navbar-brand" href="#">به اولین اپ من خوش امدیدی</a>
+		</nav>
+
+
+
+<!-- #####################  second nav --> 
+		<ul class="nav shadow">
+			<li class="nav-item">
+				<a class="nav-link" href="#">خانه</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#"> درباره ما</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">آموزش</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link disabled" href="#">فعال سازی اپ</a>
+			</li>
+		</ul>
+
+
+		<br>
+		<br>
+		<br>
 
 
 
 
-<ul>
-	<li id="azan_sobh"></li>
-	<li id="azan_zohr"></li>
-	<li id="azan_maghreb"></li>
-</ul>
+
+<!-- #####################  city selectors --> 
+		<div class="row">
+					<div class="col-sm-6 offset-3 shadow p-5">
+					
+						<div class="ir-select">
+								<label for="poro">ابتدا از این قسمت استان خود را انتخاب کنید:</label>
+								<select class="ir-province" id="poro"></select>
+							<hr>
+								<label for="sele">در این قسمت هم شهر مورد نظر را انتخاب کنید</label>
+								<select class="ir-city" id="sele"></select>	
+						</div>
+							<hr>
+				<button type="button" onclick="go()" class="">دریافت اطلاعات</button>
+				</div>
+		</div>
+
+
+
+
+
+
+
+<!-- #####################  ul => result container  --> 
+						<ul>
+							<li id="azan_sobh"></li>
+							<li id="azan_zohr"></li>
+							<li id="azan_maghreb"></li>
+						</ul>
+
+
+	</div> <!-- container div -->
+
+
+
+<audio src="aaa.mp3" autobuffer autoloop loop controls id="audio"></audio>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><!-- jquery -->
     <script src="./js/bootstrap.bundle.min.js"></script> <!-- bootstrap bundle -->
