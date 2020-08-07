@@ -6,16 +6,18 @@
     <link rel="stylesheet" href="./css/bootstrap4_5_0.min.css">
     <link rel="stylesheet" href="./css/bootstrap-rtl.min.css">
     <link rel="stylesheet" href="./css/myfont.css">
+    <link rel="stylesheet" href="main.css">
 
     <!-- <link rel="stylesheet" href="cdn.rawgit.com/morteza/bootstrap-rtl/v3.3.4/dist/css/bootstrap-rtl.min.css"> -->
 	<title>index html</title>
+
 </head>
 
 
 
+ 
 
-
-<body class="iran_bold">
+<body class="iran_bold bg-success">
 
 	<div class="container">
 
@@ -47,15 +49,23 @@
 		<br>
 		<br>
 
-
+<!-- <script type="text/javascript">
+ var now = new Date();
+var custom_date = new Date(now.getFullYear(), now.getMonth(), now.getDate(), bb[0], bb[1], bb[2], 0) - now;
+// setTimeout(function(){alert(custom_date}, md);
+alert(custom_date);
+</script> -->
 
 
 
 <!-- #####################  city selectors --> 
-		<div class="row">
-					<div class="col-sm-6 offset-3 shadow p-5">
-					
-						<div class="ir-select">
+<div class="col-sm-6 offset-3 ">
+	
+		<div class="cont">
+					<div class="card">
+						<div class="front shadow p-5 mori-gradient3">
+														
+						<div class="ir-select card-body">
 								<label for="poro">ابتدا از این قسمت استان خود را انتخاب کنید:</label>
 								<select class="ir-province" id="poro"></select>
 							<hr>
@@ -63,34 +73,49 @@
 								<select class="ir-city" id="sele"></select>	
 						</div>
 							<hr>
+							
+
+						</ul>
 				<button type="button" onclick="go()" class="">دریافت اطلاعات</button>
+				<button onclick="flip()">flip</button>
+							</div> <!-- end class front -->
+						
+						<div class="back shadow-lg p-5 mori-gradient2 text-light">
+
+							i am the back of card
+							<!-- #####################  ul => result container  --> 
+							<div class="card">
+							<p id="azan_sobh"></p>
+							<p id="azan_zohr"></p>
+							<p id="azan_maghreb"></p>
+							<button onclick="flip()">تعویض شهر</button>
+							</div>
+							
+						</div>
 				</div>
 		</div>
 
+</div>
+
+
+<script>
+
+</script>
 
 
 
-
-
-
-<!-- #####################  ul => result container  --> 
-						<ul>
-							<li id="azan_sobh"></li>
-							<li id="azan_zohr"></li>
-							<li id="azan_maghreb"></li>
-						</ul>
 
 
 	</div> <!-- container div -->
 
 
 
-<audio src="aaa.mp3" autobuffer autoloop loop controls id="audio"></audio>
+<audio src="aaa.mp3" preload="auto" id="audio">audio file mori</audio>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><!-- jquery -->
+	<script src="js/jquery.min.js"></script><!-- jquery -->
     <script src="./js/bootstrap.bundle.min.js"></script> <!-- bootstrap bundle -->
 
 	<script src="js/ir-city-select.min.js"></script>  <!-- ir-city -->
-	<script type="text/javascript" src="hi.js"></script>	<!-- hi.js -->
+	<script type="text/javascript" src="main.js"></script>	<!-- hi.js -->
 </body>
 </html>

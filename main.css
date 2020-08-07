@@ -1,0 +1,54 @@
+.cont{
+  background-color: transparent;
+  width: 500px;
+  height: 500px;
+  perspective: 1000px;
+}
+.card{
+  width: 100%;
+  height: 100%;
+  transition: transform .9s;
+  transform-style: preserve-3d;
+}
+.back , .front{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility:hidden;
+}
+.front{
+ 
+}
+.back{
+
+  transform: rotateY(180deg);
+}
+
+
+.mori-flip{
+  transform: rotateY(180deg);
+}
+
+.mori-shadow{
+  box-shadow: inset 3px 3px 4px black;
+  border-radius: 50%;
+}
+
+
+.mori-gradient1{      /*https://uigradients.com/#Venice*/
+background: #6190E8;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.mori-gradient2{      /*https://uigradients.com/#VeryBlue*/
+  background: #0575E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.mori-gradient3{      /*https://uigradients.com/#VeryBlue*/
+  background: #9CECFB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
