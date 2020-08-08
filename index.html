@@ -18,12 +18,12 @@
  
 
 <body class="iran_bold bg-success">
+	
 
-	<div class="container">
 
 <!-- #####################  first nav fixed --> 
 		<nav class="navbar navbar-fixed-top navbar-light bg-info shadow-lg">
-			<a class="navbar-brand" href="#">به اولین اپ من خوش امدیدی</a>
+			<span>طراح و برنامه نویس=< مرتضی شبانی پور</span>
 		</nav>
 
 
@@ -31,16 +31,16 @@
 <!-- #####################  second nav --> 
 		<ul class="nav shadow">
 			<li class="nav-item">
-				<a class="nav-link" href="#">خانه</a>
+				<a class="nav-link" href="#">وبسایت رسمی</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#"> درباره ما</a>
+				<a class="nav-link" href="#">سایر محصولات</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">آموزش</a>
+				<a class="nav-link" href="#">درباره ما</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link disabled" href="#">فعال سازی اپ</a>
+				<a class="nav-link disabled" href="#">تماس با ما</a>
 			</li>
 		</ul>
 
@@ -58,59 +58,64 @@ alert(custom_date);
 
 
 
-<!-- #####################  city selectors --> 
-<div class="col-sm-6 offset-3 ">
-	
-		<div class="cont">
-					<div class="card">
-						<div class="front shadow p-5 mori-gradient3">
+	<div class="row">
+
+	<div class="col-md-10 offset-md-1 col-sm-12">
+		
+
+		<div class="cont ">
+					<div class="card1">
+						<div class="front shadow p-1 mori-gradient3 text-center">
 														
+<!-- #####################  city selectors --> 
 						<div class="ir-select card-body">
 								<label for="poro">ابتدا از این قسمت استان خود را انتخاب کنید:</label>
 								<select class="ir-province" id="poro"></select>
 							<hr>
 								<label for="sele">در این قسمت هم شهر مورد نظر را انتخاب کنید</label>
 								<select class="ir-city" id="sele"></select>	
-						</div>
-							<hr>
+						</div> <!-- end ir-select -->
+
+
+				<hr>
 							
 
-						</ul>
 				<button type="button" onclick="go()" class="">دریافت اطلاعات</button>
 				<button onclick="flip()">flip</button>
-							</div> <!-- end class front -->
-						
-						<div class="back shadow-lg p-5 mori-gradient2 text-light">
 
-							i am the back of card
-							<!-- #####################  ul => result container  --> 
-							<div class="card">
-							<p id="azan_sobh"></p>
-							<p id="azan_zohr"></p>
-							<p id="azan_maghreb"></p>
-							<button onclick="flip()">تعویض شهر</button>
-							</div>
-							
-						</div>
+						</div> <!-- end class front -->
+						
+	<div class="back shadow-lg p-5 mori-gradient2 text-light m-auto ">
+
+				
+					<!-- #####################  ul => result container  --> 
+		
+				<div class="pagination-centered text-center">
+					
+					<p id="azan_sobh"></p>
+					<p id="azan_zohr"></p>
+					<p id="azan_maghreb"></p>
+					<hr>
+					<p id="message"></p>
+					<button onclick="flip()">تعویض شهر</button>
+					</div>
 				</div>
-		</div>
+		
+							
+				
+	</div>	<!-- end card back -->
+</div> <!-- end class card  -->
+
+
+
 
 </div>
-
-
-<script>
-
-</script>
-
-
-
-
-
-	</div> <!-- container div -->
+</div>
 
 
 
 <audio src="aaa.mp3" preload="auto" id="audio">audio file mori</audio>
+	</div> <!-- container div -->
 
 	<script src="js/jquery.min.js"></script><!-- jquery -->
     <script src="./js/bootstrap.bundle.min.js"></script> <!-- bootstrap bundle -->

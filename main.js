@@ -9,7 +9,7 @@ audio.play();
 
 
 function flip(){
-var s = document.getElementsByClassName("card")[0];
+var s = document.getElementsByClassName("card1")[0];
 // s.style.width="500px";
 s.classList.toggle("mori-flip");
 }
@@ -58,7 +58,7 @@ dis =new Date(now.getFullYear(), now.getMonth(), now.getDate(), bbbb[0], bbbb[1]
 
 if(dif(sobh)>0){
 
-
+	     document.getElementById("message").innerHTML ="زنگ برای اذان صبح و ظهر و مغرب تنظیم شد.";
 		setTimeout(play_azan, dif(sobh));
 		setTimeout(play_azan, dif(zohr));
 		setTimeout(play_azan, dif(magh));
@@ -66,12 +66,14 @@ if(dif(sobh)>0){
 }
 else if(dif(zohr)>0){
 
+	     document.getElementById("message").innerHTML ="زنگ برای اذان  ظهر و مغرب تنظیم شد.";
 		setTimeout(play_azan, dif(zohr));
 		setTimeout(play_azan, dif(magh));
 }
 else {
 	if(dif(magh)>0){
 
+	     document.getElementById("message").innerHTML ="زنگ برای اذان مغرب تنظیم شد";
 		setTimeout(play_azan, parseInt(dif(magh)));
 	}
 }
@@ -87,9 +89,3 @@ flip();
 }
 
 
-$(function(){
-    $(".flip").flip({
-        trigger: 'hover',
-        axis: 'x'
-    });
-});
